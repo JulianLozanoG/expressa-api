@@ -9,8 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // Para procesar peticiones application/json
 app.use(bodyParser.json())
 
-app.set("port", process.env.PORT || 3000);
-
+app.set("port", (process.env.PORT || 3000));
+app.listen( app.get( 'port' ), function() {
+    console.log( 'Node server is running on port ' + app.get( 'port' ));
+    });
 app.get('/test', (req: Request, res: Response) => {
 
     let validaJson: boolean = Number.isNaN(req.body.numeros);
