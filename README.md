@@ -18,6 +18,8 @@ Se realiza el depsliegue de la API en Heroku
 
 # EJecución de scripts de pruebas unitarias
 
-Se realizan pruebas unitarias por medio de Jasmine, 
+Se realizan pruebas unitarias por medio de Jasmine
 
 # URL del sitio donde se publico la API 
+
+https://express-api.herokuapp.com
